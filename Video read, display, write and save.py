@@ -14,7 +14,7 @@ while(cap.isOpened()):                                                    # Whil
        out.write(frame)                                                   # The Format in which the Video is being captured will get the data via frame (It's in BGR)
 
        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)                     # convert the colour of frames captured in frame from BGR to GRAY
-       cv2.imshow('frame', gray)                                  # display the frames in GRAY
+       cv2.imshow('frame', gray)                                          # display the frames in GRAY
 
        if cv2.waitKey(1) & 0xFF == ord('q'):                              # IF 'q' pressed
          break                                                            # then, BREAK
